@@ -1,3 +1,67 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
 
+body header {
+  width: 100svw;
+  background-color: #303030;
+  font-family: roboto, arial, sans-serif;
+}
+body header ul {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+body header ul li {
+  text-transform: uppercase;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+body header ul li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+}
+body header ul li a i {
+  margin-left: 10px;
+  font-size: 10px;
+}
+body header ul li ul {
+  flex-direction: column;
+  align-items: start;
+  display: none;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  background-color: #4c4c4c;
+  gap: 0;
+  padding: 0;
+}
+body header ul li ul li {
+  padding: 12px 20px;
+  width: 100%;
+}
+body header ul li ul li a {
+  text-transform: capitalize;
+  text-wrap: nowrap;
+}
+body header ul li ul li:hover {
+  background-color: #303030;
+}
+body header ul li:hover {
+  background-color: #4c4c4c;
+}
+body header ul li:hover ul {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */

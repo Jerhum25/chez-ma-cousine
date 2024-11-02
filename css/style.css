@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 *,
 ::before,
 ::after {
@@ -9,10 +9,13 @@
   list-style-type: none;
 }
 
+body {
+  position: relative;
+  font-family: "Karla", arial, sans-serif;
+}
 body header {
   width: 100svw;
   background-color: #303030;
-  font-family: roboto, arial, sans-serif;
   position: fixed;
 }
 body header ul {
@@ -68,12 +71,14 @@ body header ul li:hover ul {
 body .sectionLogo {
   background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/cropped-intc3a9rieur2.jpg?w=2000&h=1200&crop=1");
   height: 100svh;
+  width: 100svw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-attachment: fixed;
 }
 body .sectionLogo .logo {
   display: flex;
@@ -96,8 +101,85 @@ body .sectionLogo .logo h1 {
   color: #fff;
   font-weight: 200;
   letter-spacing: 3px;
-  font-family: alegreya, serif;
+  font-family: Alegreya, serif;
   cursor: pointer;
+}
+body .baniereBoissons {
+  background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/intc3a9rieur.jpg?w=2000&h=1200&crop=1");
+  width: 100svw;
+  height: 100svh;
+  background-attachment: fixed;
+}
+body .baniereBoissons .baniereBoissonsContent {
+  background-color: #122325;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .baniereBoissons .baniereBoissonsContent img {
+  width: 570px;
+}
+body .concept {
+  background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/cropped-image71.png?w=2000&h=1200&crop=1");
+  width: 100svw;
+  height: 100svh;
+  background-attachment: fixed;
+}
+body .concept .conceptContent {
+  width: 100%;
+  background-color: #122325;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 104px 32px;
+}
+body .concept .conceptContent h2 {
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-family: Alegreya, serif;
+  font-size: 28px;
+  font-weight: 200;
+}
+body .concept .conceptContent .conceptDetails {
+  display: flex;
+  gap: 50px;
+  max-width: 1120px;
+  display: flex;
+}
+body .concept .conceptContent .conceptDetails img {
+  width: 544px;
+}
+body .concept .conceptContent .conceptDetails .conceptDescription {
+  color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+body .concept .conceptContent .conceptDetails .conceptDescription h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Alegreya, serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+body .concept .conceptContent .conceptDetails .conceptDescription span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+body .concept .conceptContent .conceptDetails .conceptDescription p {
+  line-height: 23px;
+  letter-spacing: 0.5px;
+}
+body .concept .conceptContent .conceptDetails .conceptDescription p.suite {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  cursor: pointer;
+  color: #999;
 }
 
 /*# sourceMappingURL=style.css.map */

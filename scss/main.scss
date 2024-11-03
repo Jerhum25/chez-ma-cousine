@@ -13,7 +13,7 @@ body {
   position: relative;
   font-family: "Karla", arial, sans-serif;
   header {
-    width: 100svw;
+    width: 100%;
     background-color: #303030;
     position: fixed;
     ul {
@@ -73,7 +73,7 @@ body {
   .sectionLogo {
     background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/cropped-intc3a9rieur2.jpg?w=2000&h=1200&crop=1");
     height: 100svh;
-    width: 100svw;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,7 +109,7 @@ body {
 
   .baniereBoissons {
     background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/intc3a9rieur.jpg?w=2000&h=1200&crop=1");
-    max-width: 100svw;
+    max-width: 100%;
     height: calc(400px + 100svh - 88px);
     background-position: center;
     background-repeat: no-repeat;
@@ -130,7 +130,7 @@ body {
 
   .concept {
     background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/cropped-image71.png?w=2000&h=1200&crop=1");
-    width: 100svw;
+    width: 100%;
     height: calc(638px + 100svh - 88px);
     background-attachment: fixed;
     .conceptContent {
@@ -195,7 +195,7 @@ body {
 
   .carte {
     background-image: url("https://chezmacousine.org/wp-content/uploads/2018/04/img_5511.jpg?w=1818&h=1047&crop=1");
-    width: 100svw;
+    width: 100%;
     height: calc(5962px + 100svh - 88px);
     background-position: center;
     background-repeat: no-repeat;
@@ -242,6 +242,7 @@ body {
           width: 677.61px;
           .reseau {
             padding: 5px 10px;
+            // width: fit-content;
             background-color: #e0e0e0;
             font-family: "Open Sans", serif;
             font-size: 13px;
@@ -383,6 +384,49 @@ body {
                 color: #e0e0e0;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  .reseauxSociaux {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    img.famille {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    .reseauxContent {
+      display: flex;
+      padding: 64px 0;
+      justify-content: center;
+      gap: 80px;
+      background-color: #122325;
+      img {
+        width: 336px;
+      }
+      .liensReseaux {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3 {
+          font-family: "Alegreya", serif;
+          text-transform: uppercase;
+          color: #e0e0e0;
+          font-weight: 200;
+          letter-spacing: 1.5px;
+        }
+        .liens {
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+          a{
+            font-size: 28px;
+            color: #e0e0e0;
+            opacity: 0.6;
           }
         }
       }

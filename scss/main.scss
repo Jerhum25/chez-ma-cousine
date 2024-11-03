@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 *,
 ::before,
 ::after {
@@ -99,7 +99,7 @@ body {
         color: #fff;
         font-weight: 200;
         letter-spacing: 3px;
-        font-family: Alegreya, serif;
+        font-family: "Alegreya", serif;
         cursor: pointer;
       }
     }
@@ -108,7 +108,7 @@ body {
   .baniereBoissons {
     background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/intc3a9rieur.jpg?w=2000&h=1200&crop=1");
     width: 100svw;
-    height: 100svh;
+    height: calc(400px + 100svh);
     background-attachment: fixed;
     .baniereBoissonsContent {
       background-color: #122325;
@@ -126,7 +126,7 @@ body {
   .concept {
     background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/cropped-image71.png?w=2000&h=1200&crop=1");
     width: 100svw;
-    height: 100svh;
+    height: calc(638px + 100svh);
     background-attachment: fixed;
     .conceptContent {
       width: 100%;
@@ -139,7 +139,7 @@ body {
       h2 {
         color: #e0e0e0;
         text-transform: uppercase;
-        font-family: Alegreya, serif;
+        font-family: "Alegreya", serif;
         font-size: 28px;
         font-weight: 200;
       }
@@ -149,7 +149,8 @@ body {
         max-width: 1120px;
         display: flex;
         img {
-          width: 544px;
+          max-width: 544px;
+          height: 100%;
         }
         .conceptDescription {
           color: #e0e0e0;
@@ -168,15 +169,78 @@ body {
             text-transform: uppercase;
             font-weight: bold;
           }
-          p{
-            line-height: 23px;letter-spacing: .5px;
+          p {
+            line-height: 23px;
+            letter-spacing: 0.5px;
+            text-align: justify;
           }
           p.suite {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
             gap: 10px;
             cursor: pointer;
             color: #999;
+          }
+        }
+      }
+    }
+  }
+
+  .carte {
+    width: 100%;
+    background-image: url("https://chezmacousine.org/wp-content/uploads/2018/04/img_5511.jpg?w=1818&h=1047&crop=1");
+    width: 100svw;
+    height: calc(5962px + 100svh);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .carteContent {
+      // width: 677.61px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: #122325;
+      padding: 104px 0;
+      margin: auto;
+      gap: 50px;
+      h2 {
+        color: #e0e0e0;
+        text-transform: uppercase;
+        font-family: "Alegreya", serif;
+        font-size: 28px;
+        font-weight: 200;
+      }
+      img {
+        width: 677.61px;
+      }
+      .partager {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: start;
+        h3 {
+          text-transform: uppercase;
+          color: #919191;font-weight: 200;font-family: "Alegreya", serif;font-size: 13.6px;
+        }
+        .reseaux {
+          display: flex;
+          gap: 10px;
+          justify-items: baseline;width: 677.61px;
+          .reseau {
+            padding: 5px 10px;
+            background-color: #e0e0e0;
+            font-family: "Open Sans", serif;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            text-transform: capitalize;cursor: pointer;
+            i{
+              margin-right: 5px;
+              font-size: 18px;
+            }
           }
         }
       }

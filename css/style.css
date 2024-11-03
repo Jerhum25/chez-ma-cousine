@@ -110,7 +110,7 @@ body .sectionLogo .logo h1 {
 body .baniereBoissons {
   background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/intc3a9rieur.jpg?w=2000&h=1200&crop=1");
   max-width: 100svw;
-  height: calc(400px + 100svh);
+  height: calc(400px + 100svh - 88px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -130,7 +130,7 @@ body .baniereBoissons .baniereBoissonsContent img {
 body .concept {
   background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/cropped-image71.png?w=2000&h=1200&crop=1");
   width: 100svw;
-  height: calc(638px + 100svh);
+  height: calc(638px + 100svh - 88px);
   background-attachment: fixed;
 }
 body .concept .conceptContent {
@@ -148,6 +148,8 @@ body .concept .conceptContent h2 {
   font-family: "Alegreya", serif;
   font-size: 28px;
   font-weight: 200;
+  letter-spacing: 1.5px;
+  opacity: 0.6;
 }
 body .concept .conceptContent .conceptDetails {
   display: flex;
@@ -190,10 +192,9 @@ body .concept .conceptContent .conceptDetails .conceptDescription p.suite {
   color: #999;
 }
 body .carte {
-  width: 100%;
   background-image: url("https://chezmacousine.org/wp-content/uploads/2018/04/img_5511.jpg?w=1818&h=1047&crop=1");
   width: 100svw;
-  height: calc(5962px + 100svh);
+  height: calc(5962px + 100svh - 88px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -215,6 +216,8 @@ body .carte .carteContent h2 {
   font-family: "Alegreya", serif;
   font-size: 28px;
   font-weight: 200;
+  letter-spacing: 1.5px;
+  opacity: 0.6;
 }
 body .carte .carteContent img {
   width: 677.61px;
@@ -254,11 +257,8 @@ body .carte .carteContent .partager .reseaux .reseau i {
   font-size: 18px;
 }
 body .evenements {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100svw;
-  height: calc(1296px + 100svh);
+  width: 100%;
+  height: calc(803px + 100svh - 88px);
   background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/image1.png?w=2000&h=1200&crop=1");
   background-position: center;
   background-repeat: no-repeat;
@@ -280,6 +280,8 @@ body .evenements .evenementsContent h2 {
   font-size: 28px;
   font-weight: 200;
   text-align: center;
+  letter-spacing: 1.5px;
+  opacity: 0.6;
 }
 body .evenements .evenementsContent .evenementsDetails {
   display: flex;
@@ -324,6 +326,56 @@ body .evenements .evenementsContent .evenementsDetails .droite p.suite {
   gap: 10px;
   cursor: pointer;
   color: #999;
+}
+body .contact {
+  width: 100%;
+  height: 100%;
+  background-color: #122325;
+  color: #e0e0e0;
+}
+body .contact .contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 104px 32px;
+}
+body .contact .contactContent h2 {
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-family: "Alegreya", serif;
+  font-size: 28px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1.5px;
+  opacity: 0.6;
+}
+body .contact .contactContent img {
+  width: 561px;
+}
+body .contact .contactContent h3 {
+  font-size: 24px;
+  font-family: "Alegreya", serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+body .contact .contactContent .coordonnees {
+  display: flex;
+  gap: 30px;
+}
+body .contact .contactContent .coordonnees iframe {
+  width: 361px;
+  height: 250px;
+}
+body .contact .contactContent .coordonnees .droite ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+body .contact .contactContent .coordonnees .droite ul li a {
+  color: #e0e0e0;
 }
 
 /*# sourceMappingURL=style.css.map */

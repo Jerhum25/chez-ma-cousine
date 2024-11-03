@@ -30,6 +30,9 @@ body header ul li {
   position: relative;
   cursor: pointer;
 }
+body header ul li:first-child {
+  background-color: #4c4c4c;
+}
 body header ul li a {
   color: #fff;
   display: flex;
@@ -106,8 +109,11 @@ body .sectionLogo .logo h1 {
 }
 body .baniereBoissons {
   background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/intc3a9rieur.jpg?w=2000&h=1200&crop=1");
-  width: 100svw;
+  max-width: 100svw;
   height: calc(400px + 100svh);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 body .baniereBoissons .baniereBoissonsContent {
@@ -246,6 +252,78 @@ body .carte .carteContent .partager .reseaux .reseau {
 body .carte .carteContent .partager .reseaux .reseau i {
   margin-right: 5px;
   font-size: 18px;
+}
+body .evenements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100svw;
+  height: calc(1296px + 100svh);
+  background-image: url("https://chezmacousine.org/wp-content/uploads/2018/05/image1.png?w=2000&h=1200&crop=1");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .evenements .evenementsContent {
+  width: 100%;
+  background-color: #122325;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 104px 32px;
+}
+body .evenements .evenementsContent h2 {
+  color: #e0e0e0;
+  text-transform: uppercase;
+  font-family: "Alegreya", serif;
+  font-size: 28px;
+  font-weight: 200;
+  text-align: center;
+}
+body .evenements .evenementsContent .evenementsDetails {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+body .evenements .evenementsContent .evenementsDetails .gauche {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0e0e0;
+}
+body .evenements .evenementsContent .evenementsDetails .gauche img.objets {
+  width: 411px;
+}
+body .evenements .evenementsContent .evenementsDetails .gauche img.tasse {
+  width: 142px;
+}
+body .evenements .evenementsContent .evenementsDetails .gauche h3 {
+  font-size: 16px;
+}
+body .evenements .evenementsContent .evenementsDetails .gauche ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+body .evenements .evenementsContent .evenementsDetails .gauche ul li {
+  list-style-type: disc;
+}
+body .evenements .evenementsContent .evenementsDetails .droite {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .evenements .evenementsContent .evenementsDetails .droite img {
+  width: 500px;
+}
+body .evenements .evenementsContent .evenementsDetails .droite p.suite {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: #999;
 }
 
 /*# sourceMappingURL=style.css.map */

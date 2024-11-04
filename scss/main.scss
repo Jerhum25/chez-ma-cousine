@@ -20,6 +20,22 @@ body {
     background-color: #303030;
     position: fixed;
     z-index: 10;
+    button {
+      padding: 10px 20px;
+      height: fit-content;
+      font-size: 16px;
+      text-transform: uppercase;
+      background-color: #303030;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      color: #e0e0e0;
+      font-family: "Karla", serif;
+      cursor: pointer;
+      display: none;
+      i {
+        margin-right: 10px;
+      }
+    }
     ul {
       display: flex;
       justify-content: center;
@@ -440,12 +456,13 @@ body {
       }
     }
   }
-  
-  footer{
-    background-color: #122325;padding: 5px;text-align: center;
-    p{
-      color: rgba($color: #e0e0e0, $alpha: .6);
 
+  footer {
+    background-color: #122325;
+    padding: 5px;
+    text-align: center;
+    p {
+      color: rgba($color: #e0e0e0, $alpha: 0.6);
     }
   }
 }
@@ -453,7 +470,36 @@ body {
 @media screen and (max-width: 1200px) {
   body {
     header {
-      display: none;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        display: flex;
+      }
+      ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100svh;
+        background-color: #303030;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
+        li {
+          ul {
+            display: none;
+          }
+        }
+      }
+      .visible {
+        display: flex;
+      }
+    }
+    .sectionLogo {
+      padding-top: 70px;
     }
   }
 }
@@ -473,6 +519,7 @@ body {
     .imgResponsive {
       display: block;
     }
+
     .sectionLogo {
       height: auto;
 
@@ -502,7 +549,8 @@ body {
       }
     }
     .concept {
-      padding-bottom: 0;height: auto;
+      padding-bottom: 0;
+      height: auto;
       .conceptContent {
         padding: 32px;
         .conceptDetails {
@@ -517,7 +565,8 @@ body {
     .carte {
       height: auto;
       .carteContent {
-        padding: 32px 0;gap: 15px;
+        padding: 32px 0;
+        gap: 15px;
         img {
           width: 100%;
         }
@@ -556,7 +605,7 @@ body {
     .contact {
       .contactContent {
         padding: 32px;
-        h3{
+        h3 {
           font-size: 20px;
           text-align: center;
         }

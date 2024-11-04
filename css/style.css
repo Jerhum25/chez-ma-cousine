@@ -22,6 +22,22 @@ body header {
   position: fixed;
   z-index: 10;
 }
+body header button {
+  padding: 10px 20px;
+  height: fit-content;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #303030;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  color: #e0e0e0;
+  font-family: "Karla", serif;
+  cursor: pointer;
+  display: none;
+}
+body header button i {
+  margin-right: 10px;
+}
 body header ul {
   display: flex;
   justify-content: center;
@@ -438,7 +454,34 @@ body footer p {
 
 @media screen and (max-width: 1200px) {
   body header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body header button {
+    display: flex;
+  }
+  body header ul {
     display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100svh;
+    background-color: #303030;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0;
+  }
+  body header ul li ul {
+    display: none;
+  }
+  body header .visible {
+    display: flex;
+  }
+  body .sectionLogo {
+    padding-top: 70px;
   }
 }
 @media screen and (max-width: 1000px) {

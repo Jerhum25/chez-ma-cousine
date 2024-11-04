@@ -12,10 +12,14 @@
 body {
   position: relative;
   font-family: "Karla", arial, sans-serif;
+  .imgResponsive {
+    display: none;
+  }
   header {
     width: 100%;
     background-color: #303030;
     position: fixed;
+    z-index: 10;
     ul {
       display: flex;
       justify-content: center;
@@ -123,7 +127,8 @@ body {
       align-items: center;
       justify-content: center;
       img {
-        width: 570px;
+        max-width: 570px;
+        width: 100%;
       }
     }
   }
@@ -154,7 +159,6 @@ body {
         display: flex;
         gap: 50px;
         max-width: 1120px;
-        display: flex;
         img {
           max-width: 544px;
           height: 100%;
@@ -221,13 +225,12 @@ body {
         opacity: 0.6;
       }
       img {
-        width: 677.61px;
+        max-width: 677.61px;
       }
       .partager {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        align-items: start;
         h3 {
           text-transform: uppercase;
           color: #919191;
@@ -238,7 +241,7 @@ body {
         .reseaux {
           display: flex;
           gap: 10px;
-          justify-items: baseline;
+          justify-content: start;
           width: 677.61px;
           .reseau {
             padding: 5px 10px;
@@ -298,7 +301,7 @@ body {
           color: #e0e0e0;
           img {
             &.objets {
-              width: 411px;
+              max-width: 411px;
             }
             &.tasse {
               width: 142px;
@@ -321,7 +324,8 @@ body {
           flex-direction: column;
           gap: 30px;
           img {
-            width: 500px;
+            max-width: 500px;
+            object-fit: cover;
           }
           p.suite {
             display: flex;
@@ -357,7 +361,7 @@ body {
         opacity: 0.6;
       }
       img {
-        width: 561px;
+        max-width: 561px;
       }
       h3 {
         font-size: 24px;
@@ -368,6 +372,8 @@ body {
       }
       .coordonnees {
         display: flex;
+        width: 100%;
+        justify-content: center;
         gap: 30px;
         iframe {
           width: 361px;
@@ -401,12 +407,14 @@ body {
     }
     .reseauxContent {
       display: flex;
+      align-items: center;
       padding: 64px 0;
       justify-content: center;
       gap: 80px;
       background-color: #122325;
+      width: 100%;
       img {
-        width: 336px;
+        max-width: 336px;
       }
       .liensReseaux {
         display: flex;
@@ -423,11 +431,162 @@ body {
           display: flex;
           justify-content: center;
           gap: 25px;
-          a{
+          a {
             font-size: 28px;
             color: #e0e0e0;
             opacity: 0.6;
           }
+        }
+      }
+    }
+  }
+  
+  footer{
+    background-color: #122325;padding: 5px;text-align: center;
+    p{
+      color: rgba($color: #e0e0e0, $alpha: .6);
+
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    header {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    .baniereBoissons,
+    .concept,
+    .carte,
+    .evenements {
+      background-image: none;
+      background-attachment: scroll;
+      .imgResponsive {
+        width: 100%;
+      }
+    }
+    .imgResponsive {
+      display: block;
+    }
+    .sectionLogo {
+      height: auto;
+
+      background-size: cover;
+      background-attachment: scroll;
+      .logo {
+        padding: 30px 0;
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .baniereBoissons {
+      height: auto;
+      .baniereBoissonsContent {
+        height: auto;
+        padding: 40px 0;
+        img {
+          width: 80%;
+        }
+      }
+    }
+    .concept {
+      padding-bottom: 0;height: auto;
+      .conceptContent {
+        padding: 32px;
+        .conceptDetails {
+          flex-direction: column;
+          align-items: center;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .carte {
+      height: auto;
+      .carteContent {
+        padding: 32px 0;gap: 15px;
+        img {
+          width: 100%;
+        }
+        .partager {
+          .reseaux {
+            width: 100%;
+          }
+        }
+      }
+      .imgResponsive {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .evenements {
+      height: auto;
+      .evenementsContent {
+        padding: 32px;
+        .evenementsDetails {
+          flex-direction: column;
+          align-items: center;
+          .gauche {
+            img.objets {
+              width: 100%;
+            }
+          }
+          .droite {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      .contactContent {
+        padding: 32px;
+        h3{
+          font-size: 20px;
+          text-align: center;
+        }
+        img {
+          width: 100%;
+        }
+        .coordonnees {
+          flex-direction: column;
+          .gauche {
+            iframe {
+              width: 100%;
+            }
+          }
+          .droite {
+            ul {
+              gap: 10px;
+            }
+          }
+        }
+      }
+    }
+    .reseauxSociaux {
+      .reseauxContent {
+        padding: 32px;
+        align-items: center;
+        img {
+          // width: 100%;
+          // &:first-child {
+          display: none;
+          // }
         }
       }
     }
